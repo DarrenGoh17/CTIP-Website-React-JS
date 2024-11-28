@@ -47,7 +47,7 @@ npm install express mysql body-parser cors bcrypt jsonwebtoken nodemailer crypto
 12. Navigate to "http://localhost/phpmyadmin/index.php?route=/server/databases" and click "semenggoh". Import "sensor_readings.sql" into databse by clicking "Import" button on top and select "sensor_readings.sql".
 13. Everything should run as expected.
 
-#Chabot and Trained Model
+# Chabot and Trained Model
 ## Dependencies
 1. This project requires the following dependencies:
 - `opencv-python-headless`
