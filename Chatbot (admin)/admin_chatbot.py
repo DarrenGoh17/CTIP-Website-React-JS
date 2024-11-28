@@ -14,13 +14,18 @@ app = Flask(__name__)
 
 app.secret_key = 'cos30049' 
 
-# Set environment variables
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyBUXU28xMS8L00QioB7NlNG4KX2gkmD3aI'
+# Import required libraries
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Get the environment variable
 google_api_key = os.getenv('GOOGLE_API_KEY')
 
-# Ensure token is available
-if not google_api_key:
-    raise ValueError("Please set the GOOGLE_API_KEY environment variable")
+# Verify the API key is loaded
+print(google_api_key)  # It should print your API key if loaded correctly
 
 # Configure Google GenerativeAI model
 genai.configure(api_key=google_api_key)
