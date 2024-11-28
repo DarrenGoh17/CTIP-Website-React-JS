@@ -1,0 +1,1302 @@
+.h1-header{
+  text-align: center;
+  color: #556632 !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav-link {
+  padding-top: 25px !important;
+  font-weight: bold !important;
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: #007bff !important; /* Bootstrap's primary color */
+}
+
+.fa-user {
+  padding-right: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.navbar {
+  margin-top: -10px;
+  z-index: 10;
+  width: 100% !important; 
+}
+
+.logo{
+  margin-left: 300px;
+}
+
+
+/* MainSlider */
+
+
+.main-slider {
+  position: relative;
+  max-width: 100%; /* Ensure full width */
+  margin: auto;
+  overflow: hidden; /* Hide overflow */
+}
+
+.slider-container {
+  display: flex; /* Use flex to align items in a row */
+  transition: transform 0.5s ease-in-out; /* Transition for sliding effect */
+}
+
+.slider-image {
+  min-width: 100%; /* Each image takes full width of the container */
+  height: 650px; /* Set height for images */
+  position: relative; /* To position the overlay correctly */
+}
+
+.slider-image img {
+  width: 100%; /* Make the image responsive */
+  height: 100%; /* Make the image take full height of the container */
+  object-fit: cover; /* Cover the entire container */
+}
+
+/* Overlay style for all slides except the one with 'no-overlay' class */
+.slider-image:not(.no-overlay)::before {
+  border-radius: 15px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); /* Gradient from black to transparent */
+  z-index: 1; /* Ensure the overlay is above the image but below the caption */
+}
+
+.be-member-button {
+  font-weight: bold;
+  margin-top: -40px;
+  margin-left: 75px;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  background-color: #ff5722; /* Customize the button color */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+}
+
+.be-member-button:hover {
+  background-color: #ea967d; /* Darken on hover */
+}
+
+.controls {
+  position: absolute;
+  top: 50%; /* Center the controls vertically */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.session-controls{
+  position: absolute;
+  top: 50%; /* Center the controls vertically */
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.animal-controls{
+  position: absolute;
+  top: 50%; /* Center the controls vertically */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.control {
+  background: none; /* Remove background color */
+  border: none; /* Remove border */
+  cursor: pointer;
+  font-size: 55px; /* Increase font size for better visibility */
+  color: #333; /* Set icon color */
+  outline: none; /* Remove focus outline */
+}
+
+.control:hover {
+  color: #FFD700; /* Change color on hover for visibility */
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  color: inherit; /* Ensure icon inherits color from the control */
+}
+
+.caption {
+  position: absolute; /* Position caption over the image */
+  bottom:240px; /* Position it at the bottom */
+  left: 100px; /* Add some padding */
+  color: white; /* Text color */
+  padding: 10px; /* Padding for better readability */
+  border-radius: 5px; /* Rounded corners */
+  width: 30%;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+
+/* SessionSlider*/
+
+
+.session-slider-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; 
+}
+
+.session-slides {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.session-slide {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.session-image {
+  cursor: pointer;
+  width: 500px; /* Set a fixed width */
+  height: 400px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area without distorting */
+  border-radius: 15px; /* Optional: for rounded corners */
+  transition: transform 0.3s ease;
+}
+
+.session-image:hover {
+  transform: scale(1.02); 
+}
+
+.session-time-label {
+  background-color: #FFD700;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -60px;
+  margin-left: 30px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Scale both image and label on hover */
+.session-slide:hover .session-image {
+  transform: scale(1.02); /* Scale up the image on hover */
+}
+
+.session-slide:hover .session-time-label {
+  transform: scale(1.02); /* Scale up the time label on hover */
+}
+
+.next-previous-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.hidden-images {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  opacity: 0.5; /* Reduce overall opacity for hidden images */
+  pointer-events: none; /* Disable interactions with hidden images */
+}
+
+.hidden-image {
+  border-radius: 15px;
+  width: 350px; /* Set a fixed width for hidden images */
+  height: 300px; /* Set a fixed height for hidden images */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0 10px; /* Space between the images */
+}
+
+.hidden-image-left{
+  margin-left: -1400px;
+}
+
+.hidden-image-right{
+  margin-left: 1400px;
+}
+
+.session-slide,
+.hidden-image {
+    transition: opacity 0.3s ease-in-out; /* Match this duration to the timeout in JS */
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.session-animal-image {
+  width: 600px; /* Set a fixed width */
+  height: auto; /* Set a fixed height */
+  max-width: 600px;
+  object-fit: cover; /* Ensure the image covers the area without distorting */
+  border-radius: 15px; /* Optional: for rounded corners */
+}
+
+.hidden-animal-images {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  opacity: 0.5; /* Reduce overall opacity for hidden images */
+  pointer-events: none; /* Disable interactions with hidden images */
+}
+
+.hidden-animal-image {
+  border-radius: 15px;
+  width: 400px; /* Set a fixed width for hidden images */
+  height: 400px; /* Set a fixed height for hidden images */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0 10px; /* Space between the images */
+}
+
+.hidden-animal-left{
+  margin-left: -1100px;
+}
+
+.hidden-animal-right{
+  margin-left: 1100px;
+}
+
+.session-animal-label {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: -70px;
+  margin-left: 30px;
+  position: absolute;
+  z-index: 2;
+  padding: 5px 10px 5px 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+.session-slides {
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out; /* Transition for opacity */
+}
+
+.fade-in {
+  opacity: 1; /* Fully visible */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.fade-out {
+  opacity: 0; /* Fully transparent */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+/* Program*/
+
+
+.container {
+  text-align: center;
+  background-color: #F5F5DC; /* Light background for the container */
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.card-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around; /* Space items evenly */
+  margin-top: 20px; /* Space above the card container */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+  background-color: #ffffff; /* White background for the cards */
+  border-radius: 30px !important; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 15px; /* Inner spacing */
+  width: 30%; /* Card width (adjust as needed) */
+  margin: 10px; /* Margin around cards */
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card img {
+  width: 100%; /* Full width image */
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 30px; /* Rounded corners for images */
+}
+
+.card h2 {
+  font-size: 1.5rem; /* Heading size */
+  margin: 10px 0; /* Space above and below heading */
+  color: #333; /* Darker color for text */
+}
+
+.card p {
+  font-size: 1rem; /* Paragraph text size */
+  color: #666; /* Lighter text color */
+}
+
+
+/* Donation*/
+
+@keyframes bounce {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1); /* Scale up to 110% */
+  }
+}
+
+.bounce {
+  animation: bounce 0.3s ease; /* Apply bounce animation */
+}
+
+
+/* Registration */
+
+.registration-container {
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.content-wrapper {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.registration-title {
+  color: #ffffff;
+  padding-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.conservation-image {
+  width: 15%;
+  margin: 20px 0;
+}
+
+.register-button {
+  background-color: #7B9645;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.register-button:hover {
+  transform: scale(1.05);
+}
+
+.registration-container p {
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Footer */
+
+
+.footer {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly */
+  background-color: #F5F5DC; /* Light background color */
+  padding: 20px; /* Padding around the footer */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+.footer-section {
+  flex: 1; /* Flex to allow sections to grow */
+  text-align: center; /* Center-align text */
+}
+
+.footer-section h3 {
+  margin-bottom: 10px; /* Space below headings */
+  font-weight: bold; /* Bold headings */
+}
+
+.footer-links {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+  margin: 5px 0; /* Space between links */
+}
+
+.footer-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #556632; /* Link color */
+}
+
+.footer-links a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+
+/* Entry Page */
+
+
+.entry-container {
+  background-color: #faf5e9;
+  display: flex;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+}
+
+.entry {
+  display: flex;
+  margin: 0 auto;
+  height: 650px;
+  width: 90%;
+  max-width: 920px;
+  background-color: #66E377;
+  border-radius: 30px;
+
+  .entry-form {
+      flex: 1;
+      padding: 18px 36px;
+      width: 502px;
+      background-color: #66E377;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin: auto;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+
+      h2 {
+          margin-bottom: 25px;
+          font-size: 32px;
+          font-weight: bold;
+          text-align: center;
+      }
+
+      .error-text {
+          color: red;
+          font-size: 14px;
+      }
+
+      .input-field {
+          margin-bottom: 26px;
+      }
+
+      .input-field.has-error {
+          margin-bottom: 10px;
+      }
+
+      .p-inputtext {
+          padding-left: 15px;
+          width: 414px;
+          height: 46px;
+          font-size: 17px;
+          color: #000000;
+          border-radius: 10px;
+          background-color: #EBEBEB;
+          border: 1px #F4F4F4 solid;
+          outline: none;
+      }
+
+      .toggle-link {
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 0;
+          margin-left: 7px;
+          color: #000000;
+
+          a {
+              color: #000000;
+              text-decoration: none;
+              font-weight: bold;
+          }
+      }
+
+      .p-button-primary {
+          width: 100%;
+          margin: 10px 0;
+          height: 42px;
+          border-radius: 10px;
+          font-weight: bold;
+          font-size: 20px;
+          background-color: #FFD700;
+          color: #000000;
+          border: none;
+
+          &:hover {
+              background-color: #ffc800;
+          }
+      }
+  }
+
+  .entrybg {
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      overflow: hidden; /* Ensure the image doesn't overflow the container */
+
+      .entry-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image fills the container and is cropped if necessary */
+      }
+  }
+}
+
+.header-container{
+  background-color: #faf5e9;
+  width: 100%;
+}
+
+.header-container hr{
+  padding-bottom: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header-container h2{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+.things-to-do {
+  background-color: #fbebce;
+  text-align: center;
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap to the next line */
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 1000px; /* Set a maximum width to limit how wide the section gets */
+  margin-left: auto;
+  margin-right: auto; /* Center the activities container */
+}
+
+.activity {
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 2rem); /* Set width to 50% minus gap to ensure two items per row */
+  margin-bottom: 2rem; /* Adds space below each item to separate rows */
+}
+
+.activity h3 {
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #2e5e4e;
+  text-align: left;
+  font-weight: bold;
+}
+
+.activity p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+  text-align: left;
+}
+
+.find-out-more {
+  font-weight: bold;
+  padding-left: 20px;
+  display: block; /* Make it a block element so it takes the full width */
+  margin-top: 1rem;
+  color: #007d1a;
+  text-decoration: none;
+  text-align: left; /* Align text to the left */
+}
+
+.find-out-more:hover {
+  text-decoration: underline;
+}
+
+.activity-image {
+  width: 100%;
+  height: 250px; /* Set a consistent height */
+  object-fit: cover; 
+  border-radius: 30px 30px 0 0;
+}
+
+.animal-image {
+  width: 100%;
+  height: 300px; /* Set a consistent height */
+  object-fit: cover; 
+  border-radius: 30px 30px 0 0;
+}
+
+
+
+/* Hardware accelerator class */
+.trans3d {
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+}
+
+#contentContainer {
+  position: absolute;
+  margin-left: -500px;
+  margin-top: -500px;
+  left: 50%;
+  top: 50%;
+  width: 1000px;
+  height: 1000px;
+}
+
+#carouselContainer {
+  position: absolute;
+  margin-left: -500px;
+  margin-top: -500px;
+  left: 50%;
+  top: 50%;
+  width: 1000px;
+  height: 1000px;
+}
+
+.carouselItem {
+  width: 320px; /* Set width to match your desired image width */
+  height: 180px; /* Set height to match your desired image height */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px; /* Negative half of width to center */
+  margin-top: -90px; /* Negative half of height to center */
+  visibility: hidden;
+}
+
+.carouselItemInner {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Full width of the carousel item */
+  height: 100%; /* Full height of the carousel item */
+  position: absolute;
+  overflow: hidden; /* Hide overflow to ensure no clipping issues */
+}
+
+.carouselItemInner img {
+  border-radius: 20px;
+  width: 100%; /* Ensure the image fills the width of the container */
+  height: 100%; /* Ensure the image fills the height of the container */
+  object-fit: cover; /* Cover the container without distortion */
+  display: block;
+}
+
+.animal-container .header-container{
+  padding-bottom: 500px;
+}
+
+.carouselShadow {
+  position: absolute;
+  bottom: -60px; /* Adjust the vertical position of the shadow */
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  transform: translateX(-50%);
+  border-radius: 50%; /* Makes the shadow oval for a more natural look */
+  background: rgba(0, 0, 0, 0.5); /* Shadow color with opacity for a subtle effect */
+  filter: blur(5px); /* Makes the shadow softer */
+  z-index: -1; /* Place behind the item to give a proper shadow effect */
+}
+
+.imageDescription {
+  width: 80%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+.donation-container {
+  padding-bottom: 30px;
+  background-color: #fbebce;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-align {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.method-button, .amount-button {
+  background-color: #EFEFEF !important;
+  color: #000000 !important;
+  border-radius: 30px !important;
+  margin: 20px;
+  width: 200px;
+  height: 65px;
+  font-size: 18px;
+  font-weight: bold !important;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.method-button:hover, .amount-button:hover,
+.method-button:active, .amount-button:active {
+  background-color: #556632 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+/* Active state class */
+.btn-active {
+  background-color: #556632 !important;
+  color: #ffffff !important;
+}
+
+
+.amount-button-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.method-button:hover,
+.amount-button:hover {
+  transform: scale(1.05);
+}
+
+.btn-success {
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #6b8e23;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #5a7a1c;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-footer .btn {
+  width: 100px;
+}
+
+/* AdminDashboard.css */
+
+.admin-dashboard-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.admin-dashboard-title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form container within dashboard */
+.admin-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    width: 60%;
+}
+
+.admin-form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+/* Optional: Improving focus visibility */
+.admin-form-input:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.25);
+}
+
+/* Table styles specific to admin dashboard */
+.admin-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.admin-table-head {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-table th, .admin-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-table-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* Button styles within Admin Dashboard */
+.admin-dashboard-container .admin-btn-submit, 
+.admin-dashboard-container .admin-btn-cancel-edit, 
+.admin-dashboard-container .admin-btn-edit, 
+.admin-dashboard-container .admin-btn-delete {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;  /* Space between buttons */
+    transition: background-color 0.3s ease;
+}
+
+.admin-dashboard-container .admin-btn-submit {
+    background-color: #28a745; /* Green for submit actions */
+}
+
+.admin-dashboard-container .admin-btn-submit:hover {
+    background-color: #218838;
+}
+
+.admin-dashboard-container .admin-btn-cancel-edit {
+    background-color: #6c757d; /* Gray for cancel actions */
+}
+
+.admin-dashboard-container .admin-btn-cancel-edit:hover {
+    background-color: #5a6268;
+}
+
+.admin-dashboard-container .admin-btn-edit {
+    background-color: #007bff; /* Blue for edit actions */
+}
+
+.admin-dashboard-container .admin-btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.admin-dashboard-container .admin-btn-delete {
+    background-color: #dc3545; /* Red for delete actions */
+}
+
+.admin-dashboard-container .admin-btn-delete:hover {
+    background-color: #c82333;
+}
+
+.tableau-container {
+  width: 100%;
+  height: 747px;
+  max-width: 1240px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+/* Main container for vouchers */
+.voucher-container {
+  display: flex;
+  flex-direction: column; /* Stack vouchers vertically */
+  gap: 20px; /* Space between vouchers */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center; /* Center vouchers horizontally */
+}
+
+/* Container for each voucher */
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center image and button horizontally */
+  align-items: center;
+  width: 100%; /* Adjust width to take up most of the row, but leave space on the sides */
+  max-width: 600px; /* Set a max-width for larger screens */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Styles for the image */
+.voucher-image {
+  width: 100%; /* Make image take up full width of its container */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+  border-radius: 5px;
+}
+
+/* Styles for the button that appears on hover */
+.hover-button {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hidden */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1; /* Ensure the button appears above the image */
+}
+
+/* Show the button and scale the image when hovering */
+.image-container:hover .voucher-image {
+  transform: scale(1.05); /* Scale the image slightly */
+}
+
+.image-container:hover .hover-button {
+  display: block; /* Show the button on hover */
+}
+
+/* Overlay styling for additional information or voucher code display */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Higher z-index to cover the page content */
+}
+
+/* Button for redeeming within the overlay */
+.use-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styling for "No voucher left" message */
+.no-voucher-left {
+  margin-top: 20px;
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+  text-align: center; /* Center the message */
+}
+
+
+/* Profile CSS */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #ffffff; /* Adds a white border to match profile theme */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content-avatar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff !important;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 400px;
+  max-width: 40%;
+}
+
+.modal-content-avatar h3 {
+  margin-bottom: 20px;
+}
+
+.avatar-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-option {
+  cursor: pointer;
+  text-align: center;
+}
+
+.avatar-image-option {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  transition: transform 0.2s;
+}
+
+.avatar-image-option:hover {
+  transform: scale(1.1);
+}
+
+.avatar-image-option:hover {
+  transform: scale(1.1);
+}
+
+.profile-container {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+  padding: 40px;
+  max-width: 400px;
+  margin: auto;
+  background-color: #7b9645;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.profile-value {
+  color: #ffffff;
+}
+
+.profile-input {
+  background-color: #0056b3;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-button.edit {
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: #2f4f2f;
+  color: white;
+}
+
+.profile-button.save {
+  border-radius: 15px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.profile-button.cancel {
+  border-radius: 15px;
+  background-color: #f44336;
+  color: white;
+}
+
+.iot-dashboard-container {
+  padding: 40px 20px;
+  background-color: #f7f5e6;
+}
+
+.iot-dashboard-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.iot-dashboard-table {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.iot-dashboard-table-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.iot-dashboard-header-row {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.iot-dashboard-table-cell {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+}
+
+
+/* ChatButton.css */
+
+.chat-button {
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  padding: 15px 20px;
+  background-color: #7b9645; /* Button background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s; /* Added transition for text color */
+}
+
+.chat-button:hover {
+  color: rgb(0, 0, 0); /* Text color on hover */
+  background-color: #ffd700; /* Highlight color on hover */
+}
+
+.chat-button i {
+  margin-right: 8px; /* Space between the icon and text */
+}
+
+/* Styles for options that appear on button click */
+.options {
+  position: fixed;
+  bottom: 70px; /* Position above the main chat button */
+  right: 20px; /* Align with the main button */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  z-index: 1000; /* Ensure options are on top */
+}
+
+.option-button {
+  padding: 15px 20px;
+  color: rgb(0, 0, 0); /* Text color on hover */
+  background-color: #ffd700; /* Highlight color on hover */
+  border: 1px solid #ccc; /* Border around buttons */
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border 0.3s;
+  margin-bottom: 10px; /* Space between option buttons */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.option-button:hover {
+  background-color: #7b9645; /* Button background color */
+  color: white; /* Text color */
+}

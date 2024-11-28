@@ -1,0 +1,825 @@
+{
+  "otp_verification": [
+    {
+      "id": 33,
+      "email": "dchgoh@gmail.com",
+      "otp_code": "577125"
+    }
+  ],
+  "sensor_readings": [
+    {
+      "id": 1,
+      "timestamp": "2024-11-26T01:36:29.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 2,
+      "timestamp": "2024-11-26T01:36:44.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "Wildlife detected in Room B006"
+    },
+    {
+      "id": 3,
+      "timestamp": "2024-11-26T01:36:45.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 4,
+      "timestamp": "2024-11-26T01:38:35.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "Wildlife detected in Room B006"
+    },
+    {
+      "id": 5,
+      "timestamp": "2024-11-26T01:38:36.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 6,
+      "timestamp": "2024-11-26T01:38:41.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 7,
+      "timestamp": "2024-11-26T01:38:44.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 8,
+      "timestamp": "2024-11-26T01:40:59.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "Wildlife detected in Room B006"
+    },
+    {
+      "id": 9,
+      "timestamp": "2024-11-26T01:40:59.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 10,
+      "timestamp": "2024-11-26T01:41:08.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "Wildlife detected in Room B006"
+    },
+    {
+      "id": 11,
+      "timestamp": "2024-11-26T01:41:10.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 12,
+      "timestamp": "2024-11-26T01:41:14.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 13,
+      "timestamp": "2024-11-26T01:41:16.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 14,
+      "timestamp": "2024-11-26T01:41:22.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 15,
+      "timestamp": "2024-11-26T01:41:28.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 16,
+      "timestamp": "2024-11-26T01:42:22.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 62,
+      "button_status": "Wildlife detected in Room B006"
+    },
+    {
+      "id": 17,
+      "timestamp": "2024-11-26T01:42:23.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 60,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 18,
+      "timestamp": "2024-11-26T01:47:26.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 19,
+      "timestamp": "2024-11-26T01:47:29.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 20,
+      "timestamp": "2024-11-26T01:50:45.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 21,
+      "timestamp": "2024-11-26T01:50:48.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 22,
+      "timestamp": "2024-11-26T01:51:00.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 23,
+      "timestamp": "2024-11-26T01:51:06.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 24,
+      "timestamp": "2024-11-26T01:54:41.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 25,
+      "timestamp": "2024-11-26T01:54:44.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 26,
+      "timestamp": "2024-11-26T01:55:38.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 27,
+      "timestamp": "2024-11-26T01:55:42.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 28,
+      "timestamp": "2024-11-26T01:58:49.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 29,
+      "timestamp": "2024-11-26T01:58:52.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 30,
+      "timestamp": "2024-11-26T01:59:17.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 53,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 31,
+      "timestamp": "2024-11-26T01:59:20.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 51,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 32,
+      "timestamp": "2024-11-26T01:59:34.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 33,
+      "timestamp": "2024-11-26T01:59:37.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 34,
+      "timestamp": "2024-11-26T01:59:43.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 35,
+      "timestamp": "2024-11-26T01:59:46.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 36,
+      "timestamp": "2024-11-26T01:59:51.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 37,
+      "timestamp": "2024-11-26T01:59:54.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 38,
+      "timestamp": "2024-11-26T02:00:02.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 39,
+      "timestamp": "2024-11-26T02:00:03.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 40,
+      "timestamp": "2024-11-26T02:00:09.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 41,
+      "timestamp": "2024-11-26T02:00:17.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 42,
+      "timestamp": "2024-11-26T02:00:25.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 43,
+      "timestamp": "2024-11-26T02:00:28.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 44,
+      "timestamp": "2024-11-26T02:00:34.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 45,
+      "timestamp": "2024-11-26T02:00:37.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 46,
+      "timestamp": "2024-11-26T02:00:44.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 47,
+      "timestamp": "2024-11-26T02:00:47.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 48,
+      "timestamp": "2024-11-26T02:01:00.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 49,
+      "timestamp": "2024-11-26T02:01:00.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 50,
+      "timestamp": "2024-11-26T02:01:09.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 51,
+      "timestamp": "2024-11-26T02:01:09.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 52,
+      "timestamp": "2024-11-26T02:01:19.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 53,
+      "timestamp": "2024-11-26T02:01:19.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 54,
+      "timestamp": "2024-11-26T02:08:38.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 55,
+      "timestamp": "2024-11-26T02:08:44.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 56,
+      "timestamp": "2024-11-26T02:15:31.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 57,
+      "timestamp": "2024-11-26T02:15:34.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 58,
+      "timestamp": "2024-11-26T02:17:13.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 59,
+      "timestamp": "2024-11-26T02:17:16.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 60,
+      "timestamp": "2024-11-26T02:20:03.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 61,
+      "timestamp": "2024-11-26T02:20:07.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 62,
+      "timestamp": "2024-11-26T02:21:12.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 63,
+      "timestamp": "2024-11-26T02:21:15.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 64,
+      "timestamp": "2024-11-26T02:21:57.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 65,
+      "timestamp": "2024-11-26T02:22:00.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 66,
+      "timestamp": "2024-11-26T02:27:10.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 67,
+      "timestamp": "2024-11-26T02:27:11.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 68,
+      "timestamp": "2024-11-26T02:27:18.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 69,
+      "timestamp": "2024-11-26T02:27:22.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 70,
+      "timestamp": "2024-11-26T02:33:18.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 71,
+      "timestamp": "2024-11-26T02:33:19.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 72,
+      "timestamp": "2024-11-26T02:48:09.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 73,
+      "timestamp": "2024-11-26T02:48:12.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 74,
+      "timestamp": "2024-11-26T02:48:19.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 75,
+      "timestamp": "2024-11-26T02:48:22.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 76,
+      "timestamp": "2024-11-26T02:48:29.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 77,
+      "timestamp": "2024-11-26T02:48:32.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 78,
+      "timestamp": "2024-11-26T02:48:39.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 79,
+      "timestamp": "2024-11-26T02:48:42.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 80,
+      "timestamp": "2024-11-26T02:48:48.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 81,
+      "timestamp": "2024-11-26T02:48:51.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 82,
+      "timestamp": "2024-11-26T02:48:58.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 83,
+      "timestamp": "2024-11-26T02:49:07.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 84,
+      "timestamp": "2024-11-26T02:49:07.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 85,
+      "timestamp": "2024-11-26T02:49:10.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 86,
+      "timestamp": "2024-11-26T02:51:15.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 87,
+      "timestamp": "2024-11-26T02:51:17.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 88,
+      "timestamp": "2024-11-26T02:54:53.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 89,
+      "timestamp": "2024-11-26T02:54:54.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 90,
+      "timestamp": "2024-11-26T02:57:39.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 91,
+      "timestamp": "2024-11-26T02:57:40.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 92,
+      "timestamp": "2024-11-26T02:57:41.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 93,
+      "timestamp": "2024-11-26T02:57:42.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 94,
+      "timestamp": "2024-11-26T02:57:46.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 95,
+      "timestamp": "2024-11-26T02:57:52.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 96,
+      "timestamp": "2024-11-26T02:57:54.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 97,
+      "timestamp": "2024-11-26T02:57:58.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 98,
+      "timestamp": "2024-11-26T02:57:59.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 99,
+      "timestamp": "2024-11-26T02:58:50.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 100,
+      "timestamp": "2024-11-26T02:59:26.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 101,
+      "timestamp": "2024-11-26T02:59:36.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 102,
+      "timestamp": "2024-11-26T02:59:46.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 103,
+      "timestamp": "2024-11-26T03:00:09.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 104,
+      "timestamp": "2024-11-26T03:00:15.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 105,
+      "timestamp": "2024-11-26T03:00:15.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 106,
+      "timestamp": "2024-11-26T03:00:19.000Z",
+      "motion_status": "No Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    },
+    {
+      "id": 107,
+      "timestamp": "2024-11-26T03:00:27.000Z",
+      "motion_status": "Motion Detected",
+      "sound_value": 49,
+      "button_status": "No Wildlife Detected"
+    }
+  ],
+  "user_details": [
+    {
+      "user_id": 1,
+      "date_of_birth": "2024-06-09T16:00:00.000Z",
+      "gender": "Male",
+      "avatar": "monkey"
+    },
+    {
+      "user_id": 8,
+      "date_of_birth": "2024-11-10T16:00:00.000Z",
+      "gender": "Female",
+      "avatar": "monkey"
+    }
+  ],
+  "user_donation": [
+    {
+      "user_id": 1,
+      "donation_amount": 2100
+    },
+    {
+      "user_id": 8,
+      "donation_amount": 1000
+    }
+  ],
+  "user_preference": [
+    {
+      "user_id": 1,
+      "feeding_count": 1,
+      "nature_walk_count": 2,
+      "photography_count": 0
+    },
+    {
+      "user_id": 8,
+      "feeding_count": 3,
+      "nature_walk_count": 3,
+      "photography_count": 0
+    }
+  ],
+  "user_voucher": [
+    {
+      "user_id": 8,
+      "voucher_10": 1,
+      "voucher_10_redeem": 1,
+      "voucher_20": 1,
+      "voucher_20_redeem": 0
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "darrengoh040317@gmail.com",
+      "phone_number": "1234567890",
+      "password": "$2b$10$D6R1sO.VVwm4JCMv.0EoyuWN4etnH1cu5eXEcezO0mkh3u8dv0yYu",
+      "role": "admin"
+    },
+    {
+      "id": 8,
+      "username": "darren",
+      "email": "dchgoh@gmail.com",
+      "phone_number": "01691628300",
+      "password": "$2b$10$aRVuKGZ0Pj/aURBh7IApBudUgMVnIk028aN2ITf2BmVNXgXkLRh9C",
+      "role": "user"
+    }
+  ]
+}

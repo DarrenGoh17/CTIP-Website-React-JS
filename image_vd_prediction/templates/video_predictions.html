@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(30, 30, 30, 0.8)), 
+                        url("{{ url_for('static', filename='bg.webp') }}");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        /* Navigation Bar Styles */
+        /* Navigation Bar Styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #7b9645;
+            padding: 10px 20px; /* Increased padding for height */
+            position: fixed; /* Make it fixed at the top */
+            top: 0;
+            left: 0;
+            right: 0; /* Stretch full width */
+            z-index: 1000;
+        }
+        .navbar a {
+            margin-top: 20px !important;
+            font-size: 0.8rem; /* Adjusted font size for better visibility */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px; /* Space between links */
+        }
+        .navbar a:hover {
+            color: rgb(213, 198, 198);
+        }
+        .navbar img {
+            margin-right: 60px;
+            width: 50px; /* Adjusted width for logo */
+            height: auto;
+        }
+        .video-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            width: 80%;
+            max-width: 800px; /* Set a max width for the video container */
+            text-align: center;
+        }
+
+        h1 {
+            color: #7b9645; /* Color for the title */
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adds depth */
+        }
+
+        img {
+            width: 50%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+
+        p {
+            margin: 15px 0;
+            font-size: 16px;
+            color: #333; /* Dark color for the text */
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #7b9645; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 20px; /* Add some spacing above the button */
+        }
+
+        .back-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../static/logo.png" alt="Forestia Logo"> <!-- Replace with your logo path -->
+        <a href="http://localhost:5173/">Home</a>
+        <a href="http://localhost:5173/discover">Discover</a>
+        <a href="http://localhost:5173/wildlife">Wildlife</a>
+        <a href="http://localhost:5173/events">Events</a>
+        <a href="http://localhost:5173/donationPage">Donation</a>
+    </nav>
+    <div class="video-container">
+        <h1>Real-Time Video Feed</h1>
+        <img src="{{ url_for('video_feed', video_path=video_path) }}" alt="Video Feed">
+        <p>Predictions will appear over the video feed.</p>
+        <button class="back-button" onclick="window.location.href='{{ url_for('upload_form') }}'">Back to Upload</button>
+    </div>
+</body>
+</html>

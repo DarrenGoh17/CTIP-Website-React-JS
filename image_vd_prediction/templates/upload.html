@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image/Video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(30, 30, 30, 0.8)), 
+                        url("{{ url_for('static', filename='bg.webp') }}"); /* Dark gradient + background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white; /* Make text color white for better contrast */
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #7b9645;
+            padding: 10px 20px; /* Increased padding for height */
+            position: fixed; /* Make it fixed at the top */
+            top: 0;
+            left: 0;
+            right: 0; /* Stretch full width */
+            z-index: 1000;
+        }
+        .navbar a {
+            margin-top: 20px !important;
+            font-size: 0.8rem; /* Adjusted font size for better visibility */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px; /* Space between links */
+        }
+        .navbar a:hover {
+            color: rgb(213, 198, 198);
+        }
+        .navbar img {
+            margin-right: 60px;
+            width: 50px; /* Adjusted width for logo */
+            height: auto;
+        }
+        
+        h1 {
+            color: #fff; /* White color for the title */
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional: adds depth */
+        }
+
+        .upload-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        input[type="file"] {
+            display: none; /* Hide the default file input */
+        }
+
+        .file-upload-label {
+            display: inline-block;
+            background-color: #7b9645; /* Button color */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .file-upload-label:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #7b9645; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .upload-instructions {
+            margin-top: 10px;
+            color: #333; /* Dark color for the instructions */
+            font-size: 14px;
+        }
+
+        /* Preview styles */
+        .preview {
+            margin-top: 20px;
+            max-width: 100%; /* Ensure it doesn't exceed the container */
+            max-height: 1000px; /* Limit height of image preview */
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .preview img, .preview video {
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../static/logo.png" alt="Forestia Logo"> <!-- Replace with your logo path -->
+        <a href="http://localhost:5173/">Home</a>
+        <a href="http://localhost:5173/discover">Discover</a>
+        <a href="http://localhost:5173/wildlife">Wildlife</a>
+        <a href="http://localhost:5173/events">Events</a>
+        <a href="http://localhost:5173/donationPage">Donation</a>
+    </nav>
+    <h1>Upload Image or Video</h1>
+    <div class="upload-container">
+        <form method="POST" enctype="multipart/form-data" action="/upload">
+            <label class="file-upload-label" for="file">
+                <i class="fas fa-upload"></i> Choose File
+            </label>
+            <input type="file" id="file" name="file" accept="image/*,video/*" required onchange="previewFile()">
+            <button type="submit">Upload</button>
+            <div class="upload-instructions">
+                <p>Supported formats: JPEG, PNG, MP4, AVI, etc.</p>
+            </div>
+        </form>
+
+        <!-- Preview Container -->
+        <div class="preview" id="previewContainer" style="display: none;">
+            <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
+            <video id="videoPreview" controls style="display: none;"></video>
+        </div>
+    </div>
+
+    <script>
+        function previewFile() {
+            const fileInput = document.getElementById('file');
+            const previewContainer = document.getElementById('previewContainer');
+            const imagePreview = document.getElementById('imagePreview');
+            const videoPreview = document.getElementById('videoPreview');
+            const file = fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    previewContainer.style.display = 'block'; // Show preview container
+
+                    if (file.type.startsWith('image/')) {
+                        imagePreview.src = e.target.result;
+                        imagePreview.style.display = 'block'; // Show image
+                        videoPreview.style.display = 'none'; // Hide video
+                    } else if (file.type.startsWith('video/')) {
+                        videoPreview.src = e.target.result;
+                        videoPreview.style.display = 'block'; // Show video
+                        imagePreview.style.display = 'none'; // Hide image
+                    }
+                };
+
+                reader.readAsDataURL(file); // Convert file to base64 URL
+            } else {
+                previewContainer.style.display = 'none'; // Hide if no file selected
+            }
+        }
+    </script>
+</body>
+</html>
